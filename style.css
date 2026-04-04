@@ -1065,3 +1065,15 @@ body.english .service-icon {
 body.english .scroll-indicator {
     transform: translateX(-50%);
 }
+.service-img {
+    width: 100%;
+    height: 180px;  /* أو 200px كما تفضل */
+    overflow: hidden;
+    background-color: #2D2D2D; /* لون خلفية احتياطي */
+}
+
+.service-img svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
