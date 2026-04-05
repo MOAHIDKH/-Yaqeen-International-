@@ -1,23 +1,23 @@
-name: Deploy to cPanel via FTP
+name: Deploy to cPanel
 
 on:
   push:
     branches:
-      - main   # or whichever branch you use
+      - main   # change if needed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
+    
       - name: Upload via FTP
-        uses: sebastianpopp/ftp-action@v2
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./        # upload all files in your repo root
           server-dir: /public_html/
