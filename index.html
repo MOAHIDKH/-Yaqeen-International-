@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232D2D2D'/%3E%3Cpath d='M50 20 L70 40 L65 45 L55 35 L55 80 L45 80 L45 35 L35 45 L30 40 Z' fill='%23D4AF37'/%3E%3Ccircle cx='50' cy='30' r='5' fill='%23D4AF37'/%3E%3C/svg%3E">
 </head>
 <body>
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -23,322 +22,231 @@
                 </div>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#clients">عملاؤنا</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+                <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+                <li><a href="#clients" data-i18n="nav_clients">عملاؤنا</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
             </ul>
             <button class="lang-switch" id="langToggle">English</button>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
+                <div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div>
             </div>
         </div>
     </nav>
-
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-links">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="#clients">عملاؤنا</a></li>
-            <li><a href="#contact">اتصل بنا</a></li>
+            <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+            <li><a href="#clients" data-i18n="nav_clients">عملاؤنا</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
         </ul>
     </div>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-            <div class="shape shape-6"></div>
+            <div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div>
+            <div class="shape shape-4"></div><div class="shape shape-5"></div><div class="shape shape-6"></div>
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="hero-badge">خبرة تتجاوز 20 عامًا</div>
-            <h1>اليقين العالمية <span class="gold-text">للخدمات النفطية</span> والفنية</h1>
-            <p class="subtitle">حلول متكاملة لقطاع النفط والغاز والطاقة بأعلى معايير الجودة والسلامة</p>
-            <a href="#services" class="cta-button">استكشف خدماتنا <i class="fas fa-arrow-left"></i></a>
+            <div class="hero-badge" data-i18n="hero_badge">خبرة تتجاوز 20 عامًا</div>
+            <h1 data-i18n="hero_title">اليقين العالمية <span class="gold-text">للخدمات النفطية</span> والفنية</h1>
+            <p class="subtitle" data-i18n="hero_desc">حلول متكاملة لقطاع النفط والغاز والطاقة بأعلى معايير الجودة والسلامة</p>
+            <a href="#services" class="cta-button" data-i18n="hero_btn">استكشف خدماتنا <i class="fas fa-arrow-left"></i></a>
         </div>
         <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-subtitle">من نحن</span>
-                <h2 class="section-title">نحو التميز في <span class="gold-text">الخدمات النفطية</span></h2>
+                <span class="section-subtitle" data-i18n="about_subtitle">من نحن</span>
+                <h2 class="section-title" data-i18n="about_title">نحو التميز في <span class="gold-text">الخدمات النفطية</span></h2>
                 <div class="section-divider"></div>
             </div>
             <div class="about-content">
                 <div class="about-image slide-in-left" style="background-image: url('images/oil.jpeg'); background-size: cover; background-position: center;">
                     <div class="experience-badge">
                         <span class="years">20+</span>
-                        <span class="text">عاماً من الخبرة</span>
+                        <span class="text" data-i18n="exp_text">عاماً من الخبرة</span>
                     </div>
                 </div>
                 <div class="about-text slide-in-right">
-                    <h3>شركة رائدة في الخدمات النفطية والتقنية</h3>
-                    <p>تأسست شركة اليقين العالمية للخدمات النفطية والفنية في ديسمبر 2023 لتقديم خدماتها لشركات النفط والغاز وشركات توليد الطاقة، وتدار الشركة بطاقم مهندسين وأخصائيين لهم خبرة طويلة تتجاوز الثلاثون عامًا في مجال النفط والغاز.</p>
-                    <p>نتخصص في صيانة محطات النفط والغاز، إنشاء وصيانة الخزانات، توريد قطع الغيار والمعدات والمواد الكيميائية، بالإضافة إلى توفير العمالة الفنية المتخصصة.</p>
-                    <p>نتميز أيضًا بخدمات إزالة المواد المشعة وإدارة النفايات الإشعاعية والمسح الإشعاعي، ودورات تدريبية معتمدة في مجال الوقاية الإشعاعية.</p>
+                    <h3 data-i18n="about_h3">شركة رائدة في الخدمات النفطية والتقنية</h3>
+                    <p data-i18n="about_p1">تأسست شركة اليقين العالمية للخدمات النفطية والفنية في ديسمبر 2023 لتقديم خدماتها لشركات النفط والغاز وشركات توليد الطاقة، وتدار الشركة بطاقم مهندسين وأخصائيين لهم خبرة طويلة تتجاوز الثلاثون عامًا في مجال النفط والغاز.</p>
+                    <p data-i18n="about_p2">نتخصص في صيانة محطات النفط والغاز، إنشاء وصيانة الخزانات، توريد قطع الغيار والمعدات والمواد الكيميائية، بالإضافة إلى توفير العمالة الفنية المتخصصة.</p>
+                    <p data-i18n="about_p3">نتميز أيضًا بخدمات إزالة المواد المشعة وإدارة النفايات الإشعاعية والمسح الإشعاعي، ودورات تدريبية معتمدة في مجال الوقاية الإشعاعية.</p>
                     <div class="stats-container">
-                        <div class="stat-item">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">سنوات خبرة</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">25+</span>
-                            <span class="stat-label">مشروع منجز</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">عميل موثوق</span>
-                        </div>
+                        <div class="stat-item"><span class="stat-number">20+</span><span class="stat-label" data-i18n="stat1">سنوات خبرة</span></div>
+                        <div class="stat-item"><span class="stat-number">25+</span><span class="stat-label" data-i18n="stat2">مشروع منجز</span></div>
+                        <div class="stat-item"><span class="stat-number">6+</span><span class="stat-label" data-i18n="stat3">عميل موثوق</span></div>
                     </div>
                     <div class="skills">
-                        <span class="skill-tag"><i class="fas fa-industry"></i> صيانة محطات</span>
-                        <span class="skill-tag"><i class="fas fa-boxes"></i> توريد قطع غيار</span>
-                        <span class="skill-tag"><i class="fas fa-radiation"></i> إدارة النفايات المشعة</span>
-                        <span class="skill-tag"><i class="fas fa-chalkboard-user"></i> تدريب معتمد</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> إنشاء خزانات</span>
-                        <span class="skill-tag"><i class="fas fa-users"></i> عمالة فنية</span>
+                        <span class="skill-tag"><i class="fas fa-industry"></i> <span data-i18n="skill1">صيانة محطات</span></span>
+                        <span class="skill-tag"><i class="fas fa-boxes"></i> <span data-i18n="skill2">توريد قطع غيار</span></span>
+                        <span class="skill-tag"><i class="fas fa-radiation"></i> <span data-i18n="skill3">إدارة النفايات المشعة</span></span>
+                        <span class="skill-tag"><i class="fas fa-chalkboard-user"></i> <span data-i18n="skill4">تدريب معتمد</span></span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> <span data-i18n="skill5">إنشاء خزانات</span></span>
+                        <span class="skill-tag"><i class="fas fa-users"></i> <span data-i18n="skill6">عمالة فنية</span></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-subtitle">خدماتنا</span>
-                <h2 class="section-title">ما <span class="gold-text">نقدمه</span> لكم</h2>
+                <span class="section-subtitle" data-i18n="services_subtitle">خدماتنا</span>
+                <h2 class="section-title" data-i18n="services_title">ما <span class="gold-text">نقدمه</span> لكم</h2>
                 <div class="section-divider"></div>
             </div>
             <div class="services-grid">
                 <!-- خدمة 1 -->
                 <div class="service-item">
-                    <div class="service-img">
-                        <img src="images/images.jpg" alt="قطع غيار" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                  
+                    <div class="service-img"><img src="images/images.jpg" alt="قطع غيار" style="width:100%; height:100%; object-fit:cover;"></div>
                     <div class="service-content">
-                        <h4>توريد قطع الغيار والمعدات</h4>
-                        <p>توريد قطع الغيار الكهربائية والإلكترونية، قطع غيار الضواغط والمضخات والصمامات ومعدات الحفر والمواد الكيميائية.</p>
-                        <div class="service-tech"><span class="tech-tag">قطع غيار</span><span class="tech-tag">معدات حفر</span><span class="tech-tag">كيماويات</span></div>
+                        <h4 data-i18n="service1_title">توريد قطع الغيار والمعدات</h4>
+                        <p data-i18n="service1_desc">توريد قطع الغيار الكهربائية والإلكترونية، قطع غيار الضواغط والمضخات والصمامات ومعدات الحفر والمواد الكيميائية.</p>
+                        <div class="service-tech">
+                            <span class="tech-tag" data-i18n="service1_tag1">قطع غيار</span>
+                            <span class="tech-tag" data-i18n="service1_tag2">معدات حفر</span>
+                            <span class="tech-tag" data-i18n="service1_tag3">كيماويات</span>
+                        </div>
                     </div>
                 </div>
                 <!-- خدمة 2 -->
                 <div class="service-item">
-                    <div class="service-img">
-                        <img src="images/صيانة محطات النفط و الغاز.webp" alt=" " style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                  
+                    <div class="service-img"><img src="images/صيانة محطات النفط و الغاز.webp" alt="صيانة" style="width:100%; height:100%; object-fit:cover;"></div>
                     <div class="service-content">
-                        <h4>صيانة المحطات النفطية</h4>
-                        <p>صيانة الفواصل والضواغط والمضخات والمبادلات الحرارية والمسخنات داخل محطات النفط والغاز.</p>
-                        <div class="service-tech"><span class="tech-tag">ضواغط</span><span class="tech-tag">مضخات</span><span class="tech-tag">مبادلات</span></div>
+                        <h4 data-i18n="service2_title">صيانة المحطات النفطية</h4>
+                        <p data-i18n="service2_desc">صيانة الفواصل والضواغط والمضخات والمبادلات الحرارية والمسخنات داخل محطات النفط والغاز.</p>
+                        <div class="service-tech">
+                            <span class="tech-tag" data-i18n="service2_tag1">ضواغط</span>
+                            <span class="tech-tag" data-i18n="service2_tag2">مضخات</span>
+                            <span class="tech-tag" data-i18n="service2_tag3">مبادلات</span>
+                        </div>
                     </div>
                 </div>
                 <!-- خدمة 3 -->
                 <div class="service-item">
-                    <div class="service-img">
-                        <img src="images/WhatsApp-Image-2026-04-04-at-12.07.00-PM-_5__1.webp" alt="قطع غيار" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                  
+                    <div class="service-img"><img src="images/WhatsApp-Image-2026-04-04-at-12.07.00-PM-_5__1.webp" alt="خزانات" style="width:100%; height:100%; object-fit:cover;"></div>
                     <div class="service-content">
-                        <h4>إنشاء وصيانة الخزانات</h4>
-                        <p>خدمات إنشاء وصيانة الخزانات النفطية بأيدي مهندسين وفنيين ذوي خبرة عالية.</p>
-                        <div class="service-tech"><span class="tech-tag">خزانات نفط</span><span class="tech-tag">هياكل معدنية</span><span class="tech-tag">لحام</span></div>
+                        <h4 data-i18n="service3_title">إنشاء وصيانة الخزانات</h4>
+                        <p data-i18n="service3_desc">خدمات إنشاء وصيانة الخزانات النفطية بأيدي مهندسين وفنيين ذوي خبرة عالية.</p>
+                        <div class="service-tech">
+                            <span class="tech-tag" data-i18n="service3_tag1">خزانات نفط</span>
+                            <span class="tech-tag" data-i18n="service3_tag2">هياكل معدنية</span>
+                            <span class="tech-tag" data-i18n="service3_tag3">لحام</span>
+                        </div>
                     </div>
                 </div>
                 <!-- خدمة 4 -->
                 <div class="service-item">
-                    <div class="service-img">
-                        <img src="images/ازالة المواد المشعة ديرها إزالة.webp" alt=" " style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                    
+                    <div class="service-img"><img src="images/ازالة المواد المشعة ديرها إزالة.webp" alt="عمالة" style="width:100%; height:100%; object-fit:cover;"></div>
                     <div class="service-content">
-                        <h4>توفير العمالة الفنية</h4>
-                        <p>مهندسون متخصصون في الحفر، الإلكترونيات، الآلات الدقيقة، المعدات الدوارة كالتربينات وضواغط الغاز.</p>
-                        <div class="service-tech"><span class="tech-tag">مهندسون</span><span class="tech-tag">فنيون</span><span class="tech-tag">لحامون</span></div>
+                        <h4 data-i18n="service4_title">توفير العمالة الفنية</h4>
+                        <p data-i18n="service4_desc">مهندسون متخصصون في الحفر، الإلكترونيات، الآلات الدقيقة، المعدات الدوارة كالتربينات وضواغط الغاز.</p>
+                        <div class="service-tech">
+                            <span class="tech-tag" data-i18n="service4_tag1">مهندسون</span>
+                            <span class="tech-tag" data-i18n="service4_tag2">فنيون</span>
+                            <span class="tech-tag" data-i18n="service4_tag3">لحامون</span>
+                        </div>
                     </div>
                 </div>
                 <!-- خدمة 5 -->
                 <div class="service-item">
-                    <div class="service-img">
-                        <img src="images/images (1).jpg" alt="" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                
+                    <div class="service-img"><img src="images/images (1).jpg" alt="إشعاع" style="width:100%; height:100%; object-fit:cover;"></div>
                     <div class="service-content">
-                        <h4>إزالة المواد المشعة</h4>
-                        <p>مسح إشعاعي، إدارة النفايات المشعة، نقل المصادر المشعة وإعادة تصديرها، معتمدون من مؤسسة الطاقة الذرية.</p>
-                        <div class="service-tech"><span class="tech-tag">مسح إشعاعي</span><span class="tech-tag">نفايات مشعة</span><span class="tech-tag">معتمد</span></div>
+                        <h4 data-i18n="service5_title">إزالة و معالجة المواد المشعة</h4>
+                        <p data-i18n="service5_desc">مسح إشعاعي، إدارة النفايات المشعة، نقل المصادر المشعة وإعادة تصديرها، معتمدون من مؤسسة الطاقة الذرية.</p>
+                        <div class="service-tech">
+                            <span class="tech-tag" data-i18n="service5_tag1">مسح إشعاعي</span>
+                            <span class="tech-tag" data-i18n="service5_tag2">نفايات مشعة</span>
+                            <span class="tech-tag" data-i18n="service5_tag3">معتمد</span>
+                        </div>
                     </div>
                 </div>
                 <!-- خدمة 6 -->
                 <div class="service-item">
-                    <div class="service-img">
-                        <img src="images/PixVerse_Image_Effect_prompt_التدريب في الوقاي (1).jpg" alt="" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                    
+                    <div class="service-img"><img src="images/PixVerse_Image_Effect_prompt_التدريب في الوقاي (1).jpg" alt="تدريب" style="width:100%; height:100%; object-fit:cover;"></div>
                     <div class="service-content">
-                        <h4>التدريب في الوقاية الإشعاعية</h4>
-                        <p>دورات متقدمة لمسؤولي الوقاية الإشعاعية معتمدة من مؤسسة الطاقة الذرية الليبية ووزارة القوى العاملة.</p>
-                        <div class="service-tech"><span class="tech-tag">تدريب معتمد</span><span class="tech-tag">شهادات</span><span class="tech-tag">خبراء</span></div>
+                        <h4 data-i18n="service6_title">التدريب في الوقاية الإشعاعية</h4>
+                        <p data-i18n="service6_desc">دورات متقدمة لمسؤولي الوقاية الإشعاعية معتمدة من مؤسسة الطاقة الذرية الليبية ووزارة القوى العاملة.</p>
+                        <div class="service-tech">
+                            <span class="tech-tag" data-i18n="service6_tag1">تدريب معتمد</span>
+                            <span class="tech-tag" data-i18n="service6_tag2">شهادات</span>
+                            <span class="tech-tag" data-i18n="service6_tag3">خبراء</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Clients Section -->
-    <section id="clients" class="clients">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-subtitle">شركاء النجاح</span>
-                <h2 class="section-title">نفخر <span class="gold-text">بثقتهم</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="clients-showcase">
-                <div class="premium-card">
-                    <div class="client-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <div class="client-name">شركة الهروج <br>للعمليات النفطية</div>
-                    <div class="client-badge">شريك استراتيجي</div>
-                </div>
-                <div class="premium-card">
-                    <div class="client-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <div class="client-name">شركة السرير</div>
-                    <div class="client-badge">شريك موثوق</div>
-                </div>
-                <div class="premium-card">
-                    <div class="client-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="client-name">شركة أكاكوس</div>
-                    <div class="client-badge">شريك استراتيجي</div>
-                </div>
-                <div class="premium-card">
-                    <div class="client-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="client-name">شركة ديتسمان</div>
-                    <div class="client-badge">شريك موثوق</div>
-                </div>
-                <div class="premium-card">
-                    <div class="client-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <div class="client-name">شركة الإنشاءات <br>الكهربائية</div>
-                    <div class="client-badge">شريك استراتيجي</div>
-                </div>
-            </div>
-            <div class="clients-marquee">
-                <div class="marquee-content">
-                    <span>شركة الهروج للعمليات النفطية</span>
-                    <span>شركة السرير</span>
-                    <span>شركة أكاكوس</span>
-                    <span>شركة ديتسمان</span>
-                    <span>شركة الإنشاءات الكهربائية</span>
-                    <span>شركة الهروج للعمليات النفطية</span>
-                    <span>شركة السرير</span>
-                    <span>شركة أكاكوس</span>
-                    <span>شركة ديتسمان</span>
-                    <span>شركة الإنشاءات الكهربائية</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-subtitle" data-i18n="clients_subtitle">شركاء النجاح</span>
+                <h2 class="section-title" data-i18n="clients_title">نفخر <span class="gold-text">بثقتهم</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="clients-showcase">
+                <div class="premium-card"><div class="client-icon"><i class="fas fa-crown"></i></div><div class="client-name" data-i18n="client1">شركة الهروج للعمليات النفطية</div><div class="client-badge" data-i18n="badge1">شريك استراتيجي</div></div>
+                <div class="premium-card"><div class="client-icon"><i class="fas fa-gem"></i></div><div class="client-name" data-i18n="client2">شركة السرير</div><div class="client-badge" data-i18n="badge2">شريك موثوق</div></div>
+                <div class="premium-card"><div class="client-icon"><i class="fas fa-star"></i></div><div class="client-name" data-i18n="client3">شركة أكاكوس</div><div class="client-badge" data-i18n="badge3">شريك استراتيجي</div></div>
+                <div class="premium-card"><div class="client-icon"><i class="fas fa-trophy"></i></div><div class="client-name" data-i18n="client4">شركة ديتسمان</div><div class="client-badge" data-i18n="badge4">شريك موثوق</div></div>
+                <div class="premium-card"><div class="client-icon"><i class="fas fa-bolt"></i></div><div class="client-name" data-i18n="client5">شركة الإنشاءات الكهربائية</div><div class="client-badge" data-i18n="badge5">شريك استراتيجي</div></div>
+            </div>
+            <div class="clients-marquee"><div class="marquee-content" id="marqueeClients"></div></div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="contact-floating-shapes">
-            <div class="contact-shape contact-shape-1"></div>
-            <div class="contact-shape contact-shape-2"></div>
-            <div class="contact-shape contact-shape-3"></div>
-            <div class="contact-shape contact-shape-4"></div>
-            <div class="contact-shape contact-shape-5"></div>
-            <div class="contact-shape contact-shape-6"></div>
+            <div class="contact-shape contact-shape-1"></div><div class="contact-shape contact-shape-2"></div>
+            <div class="contact-shape contact-shape-3"></div><div class="contact-shape contact-shape-4"></div>
+            <div class="contact-shape contact-shape-5"></div><div class="contact-shape contact-shape-6"></div>
         </div>
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info-section fade-in">
                     <div class="section-header">
-                        <span class="section-subtitle gold">تواصل معنا</span>
-                        <h2 class="section-title light">نحن هنا <span class="gold-text">لخدمتك</span></h2>
+                        <span class="section-subtitle gold" data-i18n="contact_subtitle">تواصل معنا</span>
+                        <h2 class="section-title light" data-i18n="contact_title">نحن هنا <span class="gold-text">لخدمتك</span></h2>
                         <div class="section-divider gold-divider"></div>
                     </div>
-                    <p>نحن هنا للإجابة على استفساراتكم وتقديم العروض المناسبة لمشاريعكم</p>
+                    <p data-i18n="contact_desc">نحن هنا للإجابة على استفساراتكم وتقديم العروض المناسبة لمشاريعكم</p>
                     <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="detail-text">طريق خدمات الدائري الثاني / غوط الشعال - ليبيا</div>
-                        </div>
-                        <div class="contact-detail-item">
-                            <div class="detail-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div class="detail-text" dir="ltr">00218917325543</div>
-                        </div>
-                        <div class="contact-detail-item">
-                            <div class="detail-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="detail-text" dir="ltr">a.essied@yosc.ly</div>
-                        </div>
+                        <div class="contact-detail-item"><div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div><div class="detail-text" data-i18n="address">طريق خدمات الدائري الثاني / غوط الشعال - ليبيا</div></div>
+                        <div class="contact-detail-item"><div class="detail-icon"><i class="fas fa-phone-alt"></i></div><div class="detail-text" dir="ltr">00218917325543</div></div>
+                        <div class="contact-detail-item"><div class="detail-icon"><i class="fas fa-envelope"></i></div><div class="detail-text" dir="ltr">a.essied@yosc.ly</div></div>
                     </div>
                 </div>
                 <div class="contact-form-section fade-in">
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="name"><i class="fas fa-user"></i> الاسم</label>
-                                <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
-                                <input type="email" id="email" name="email" placeholder="example@example.com" required>
-                            </div>
+                            <div class="form-group"><label><i class="fas fa-user"></i> <span data-i18n="name_label">الاسم</span></label><input type="text" id="name" placeholder="اسمك الكامل" required></div>
+                            <div class="form-group"><label><i class="fas fa-envelope"></i> <span data-i18n="email_label">البريد الإلكتروني</span></label><input type="email" id="email" placeholder="example@example.com" required></div>
                         </div>
-                        <div class="form-group">
-                            <label for="subject"><i class="fas fa-tag"></i> الموضوع</label>
-                            <input type="text" id="subject" name="subject" placeholder="موضوع الرسالة" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message"><i class="fas fa-comment"></i> الرسالة</label>
-                            <textarea id="message" name="message" rows="4" placeholder="أخبرنا عن مشروعك..." required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+                        <div class="form-group"><label><i class="fas fa-tag"></i> <span data-i18n="subject_label">الموضوع</span></label><input type="text" id="subject" placeholder="موضوع الرسالة" required></div>
+                        <div class="form-group"><label><i class="fas fa-comment"></i> <span data-i18n="message_label">الرسالة</span></label><textarea id="message" rows="4" placeholder="أخبرنا عن مشروعك..." required></textarea></div>
+                        <button type="submit" class="submit-btn" data-i18n="submit_btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                   
-                    <div>
-                        <div class="footer-logo-text-ar">اليقين العالمية للخدمات النفطية والفنية</div>
-                        <div class="footer-logo-text-en">Yaqeen International for Oil & Technical Services</div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2025 اليقين العالمية. جميع الحقوق محفوظة.</p>
-                </div>
+                <div class="footer-logo"><div><div class="footer-logo-text-ar">اليقين العالمية للخدمات النفطية والفنية</div><div class="footer-logo-text-en">Yaqeen International for Oil & Technical Services</div></div></div>
+                <div class="footer-copyright"><p>&copy; 2025 اليقين العالمية. <span data-i18n="copyright">جميع الحقوق محفوظة</span>.</p></div>
             </div>
         </div>
     </footer>
